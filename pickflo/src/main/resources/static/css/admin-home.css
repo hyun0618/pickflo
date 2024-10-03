@@ -1,0 +1,86 @@
+@charset "UTF-8";  
+
+body {
+	background-color: #141414 !important;
+}
+
+.header #logo {
+	font-family: 'PartialSansKR-Regular', Arial, sans-serif;
+	font-size: 35px;
+	font-weight: normal;
+	background-color: transparent;
+	color: #E50913;
+}
+
+.header {
+	margin-top: 30px;
+	justify-content: center;
+	padding: 30px;
+}
+
+.header-logo {
+	display: flex;
+	justify-content: start;
+}
+
+.header-user {
+	display: flex;
+	justify-content: end;
+}
+
+a {
+	text-decoration: none;
+}
+
+
+.chart-container {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    margin: 20px auto; 
+
+}
+
+.chart-row {
+    display: flex; /* 차트를 나란히 배치 */
+    justify-content: center; /* 수평 중앙 정렬 */
+    margin-bottom: 50px; /* 각 행 사이의 여백 */
+    width: 100%; /* 행의 너비를 100%로 설정 */
+    flex-wrap: wrap; /* 내용이 넘칠 경우 줄바꿈 */
+}
+
+canvas {
+    width: 100%; /* 너비를 100%로 설정하여 부모 컨테이너에 맞게 조정 */
+    height: auto; /* 높이를 자동으로 설정하여 비율을 유지 */
+    max-height: 400px; /* 최대 높이 설정 */
+    max-width: 400px; /* 각 차트의 최대 너비 설정 */
+    margin: 0 15px; /* 좌우 여백 */
+}
+
+@media ( max-width : 768px) {
+	.header { 
+		margin-top: 10px; 
+	}
+	
+	.header #logo {
+		margin-top: 10px;
+		font-size: 25px;
+	} 	
+	
+	.header-logo {
+		margin-left: 0px;
+	}
+
+}
+
+@media only screen and (min-width: 768px) and (max-width : 1024px) {
+	
+	
+}
+
+
+@media only screen and (min-width: 1024px) and (max-width : 1366px) {
+
+	
+}
